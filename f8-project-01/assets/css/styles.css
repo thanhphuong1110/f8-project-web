@@ -4,7 +4,150 @@
 html {
     font-size: 62.5%;
 }
+:root{
+    --main_color: #0F1B4C;
+}
 body{
     font-size: 1.6rem;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
+}
+/* HEADER */
+.header{
+    position: relative;
+    background: #E6F0FF;
+    height: 100vh;
+}
+/* Common */
+.content{
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+    min-width: 98px;
+    border-radius: 8px;
+    background: var(--main_color);
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 18px 16px;
+    text-align: center;
+    display: inline-block;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+/* Rieng */
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+.navbar ul{
+    display: flex;
+    margin-left: 50px;
+}
+.action{
+    margin-left: auto;
+}
+.navbar ul a {
+    color: #4F5361;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 8px 1.4rem;
+}
+.navbar ul a:hover{
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
+.navbar .action-link{
+    color: var(--main_color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.action .action-btn{
+    padding: 13px 16px;
+    margin-left: 18px;
+}
+.hero .info{
+    width: 51%;
+}
+.hero{
+    margin-top: 130px;
+}
+.hero .sub-title{
+    color: #687690;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+.title{
+    margin-top: 8px;
+    color: #000336;
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 1.1875;
+}
+.hero .desc{
+    color: #5A6473;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78;
+    margin-top: 30px;
+}
+.hero-cta{
+    min-width: 170px;
+    margin-top: 40px;
+}
+.hero-img{
+    position: absolute;
+    right: calc((100vw - 1110px)/2 - 100px);
+    bottom: 0;
+}
+.clients{
+    margin-top: 122px;
+}
+.clients .row{
+    display: flex;
+    justify-content: space-between;
+}
+.clients .desc{
+    color: #7D8589;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+    margin-top: 23px;
+}
+.clients .images{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 96px;
+}
+/* ===========Guides=============== */
+.guides{
+    margin-top: 199px;
+}
+.guides .content .sub-title{
+    color: #000339;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+    position: relative;
+}
+.guides .content .sub-title::before{
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;    
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
