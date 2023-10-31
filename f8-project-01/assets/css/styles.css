@@ -26,7 +26,7 @@ body{
 }
 .btn{
     min-width: 98px;
-    border-radius: 8px;
+    border-radius: 12px;
     background: var(--main_color);
     color: #fff;
     font-weight: 500;
@@ -71,6 +71,7 @@ a{
 .action .action-btn{
     padding: 13px 16px;
     margin-left: 18px;
+    border-radius: 8px;
 }
 .hero .info{
     width: 51%;
@@ -131,6 +132,15 @@ a{
 .guides{
     margin-top: 199px;
 }
+.list-guide{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.guide-item{
+    margin: 0 70px;
+    text-align: center;
+}
 .guides .content .sub-title{
     color: #000339;
     text-align: center;
@@ -150,4 +160,72 @@ a{
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
+}
+.guides .content .desc{
+    color: #5A6473;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    margin: 20px auto 0;
+    width: 459px;
+    max-width: 100%;
+}
+.list-guide .guide-item .title{
+    color: #3B3C45;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1; /* 110% */
+    margin-top: 26px;
+}
+.list-guide .guide-item .link{
+    color: #0689FF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+.guide-item .arrow{
+    margin-left: 4px;
+}
+.guide-cta{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.guide-cta .btn{
+    min-width: 170px;
+}
+/* ==========Features========== */
+.featured{
+    background: #E6F0FF;
+    margin-top: 230px;
+}
+.featured .sub-title{
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+.featured .desc{
+    color: #5A6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.875; /* 187.5% */
+}
+.featured .link{
+    color: #0689FF;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display:flex;
+    align-items: center;
+}
+.featured .row{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.featured .link .arrow{
+    margin-left: 8px;
 }
